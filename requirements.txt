@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.2
+jupyterlab>=4.0
+nbformat>=5.9
+nbclient>=0.8
+ipykernel>=6.0
+joblib>=1.2

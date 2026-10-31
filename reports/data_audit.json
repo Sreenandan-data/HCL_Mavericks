@@ -1,0 +1,674 @@
+{
+  "file": {
+    "path": "C:\\Users\\sreen\\Downloads\\HCL_Next_bill_prediction\\HCL_Mavericks\\data\\next_bill_amount_prediction_synthetic_dataset.csv",
+    "sha256": "1591046b1a25f22bb6da7f5ff18f84281afcfd62bbf3e7afd582607b15c8859f",
+    "size_bytes": 1435076
+  },
+  "shape": {
+    "rows": 17000,
+    "columns": 15,
+    "column_names": [
+      "customer_id",
+      "billing_month",
+      "plan_type",
+      "data_usage_gb",
+      "voice_calls",
+      "sms_count",
+      "addon_data_gb",
+      "plan_fee",
+      "discount_amount",
+      "data_charge",
+      "voice_charge",
+      "addon_charge",
+      "tax_amount",
+      "bill_amount",
+      "next_bill_amount"
+    ],
+    "dtypes": {
+      "customer_id": "str",
+      "billing_month": "str",
+      "plan_type": "str",
+      "data_usage_gb": "float64",
+      "voice_calls": "int64",
+      "sms_count": "int64",
+      "addon_data_gb": "float64",
+      "plan_fee": "int64",
+      "discount_amount": "float64",
+      "data_charge": "float64",
+      "voice_charge": "float64",
+      "addon_charge": "float64",
+      "tax_amount": "float64",
+      "bill_amount": "float64",
+      "next_bill_amount": "float64"
+    },
+    "missing_expected_columns": [],
+    "extra_columns": []
+  },
+  "missing": {
+    "customer_id": 0,
+    "billing_month": 0,
+    "plan_type": 0,
+    "data_usage_gb": 0,
+    "voice_calls": 0,
+    "sms_count": 0,
+    "addon_data_gb": 0,
+    "plan_fee": 0,
+    "discount_amount": 0,
+    "data_charge": 0,
+    "voice_charge": 0,
+    "addon_charge": 0,
+    "tax_amount": 0,
+    "bill_amount": 0,
+    "next_bill_amount": 0
+  },
+  "unique": {
+    "customer_id": 1000,
+    "billing_month": 17,
+    "plan_type": 3,
+    "data_usage_gb": 3495,
+    "voice_calls": 476,
+    "sms_count": 231,
+    "addon_data_gb": 3,
+    "plan_fee": 3,
+    "discount_amount": 4,
+    "data_charge": 6183,
+    "voice_charge": 183,
+    "addon_charge": 3,
+    "tax_amount": 5281,
+    "bill_amount": 7127,
+    "next_bill_amount": 7158
+  },
+  "total_missing": 0,
+  "dates": {
+    "parse_failures": 0,
+    "min_date": "2024-01-01",
+    "max_date": "2025-05-01",
+    "distinct_months": 17,
+    "month_list": [
+      "2024-01-01",
+      "2024-02-01",
+      "2024-03-01",
+      "2024-04-01",
+      "2024-05-01",
+      "2024-06-01",
+      "2024-07-01",
+      "2024-08-01",
+      "2024-09-01",
+      "2024-10-01",
+      "2024-11-01",
+      "2024-12-01",
+      "2025-01-01",
+      "2025-02-01",
+      "2025-03-01",
+      "2025-04-01",
+      "2025-05-01"
+    ],
+    "non_first_of_month_rows": 0
+  },
+  "customers": {
+    "n_customers": 1000,
+    "per_month_row_counts": {
+      "2024-01-01": 1000,
+      "2024-02-01": 1000,
+      "2024-03-01": 1000,
+      "2024-04-01": 1000,
+      "2024-05-01": 1000,
+      "2024-06-01": 1000,
+      "2024-07-01": 1000,
+      "2024-08-01": 1000,
+      "2024-09-01": 1000,
+      "2024-10-01": 1000,
+      "2024-11-01": 1000,
+      "2024-12-01": 1000,
+      "2025-01-01": 1000,
+      "2025-02-01": 1000,
+      "2025-03-01": 1000,
+      "2025-04-01": 1000,
+      "2025-05-01": 1000
+    },
+    "history_length_distribution": {
+      "17": 1000
+    },
+    "history_length_stats": {
+      "min": 17,
+      "max": 17,
+      "mean": 17.0,
+      "median": 17
+    }
+  },
+  "duplicates": {
+    "complete_row_duplicates": 0,
+    "customer_month_key_duplicates": 0
+  },
+  "sort_order": {
+    "sorted_by_customer_month": true
+  },
+  "internal_gaps": {
+    "customers_with_gaps": 0,
+    "total_gap_instances": 0,
+    "examples": []
+  },
+  "numeric_summary": {
+    "describe": {
+      "data_usage_gb": {
+        "count": 17000.0,
+        "mean": 15.1745,
+        "std": 8.7475,
+        "min": 1.0,
+        "25%": 9.04,
+        "50%": 13.5,
+        "75%": 19.49,
+        "max": 73.65
+      },
+      "voice_calls": {
+        "count": 17000.0,
+        "mean": 251.7835,
+        "std": 77.0823,
+        "min": 0.0,
+        "25%": 201.0,
+        "50%": 253.0,
+        "75%": 304.0,
+        "max": 518.0
+      },
+      "sms_count": {
+        "count": 17000.0,
+        "mean": 90.2124,
+        "std": 40.5246,
+        "min": 0.0,
+        "25%": 62.0,
+        "50%": 90.0,
+        "75%": 118.0,
+        "max": 269.0
+      },
+      "addon_data_gb": {
+        "count": 17000.0,
+        "mean": 1.0329,
+        "std": 2.5835,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 10.0
+      },
+      "plan_fee": {
+        "count": 17000.0,
+        "mean": 369.3,
+        "std": 176.9456,
+        "min": 199.0,
+        "25%": 199.0,
+        "50%": 399.0,
+        "75%": 399.0,
+        "max": 699.0
+      },
+      "discount_amount": {
+        "count": 17000.0,
+        "mean": 14.9353,
+        "std": 22.9846,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 25.0,
+        "max": 75.0
+      },
+      "data_charge": {
+        "count": 17000.0,
+        "mean": 67.8014,
+        "std": 123.5723,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 95.29,
+        "max": 1013.26
+      },
+      "voice_charge": {
+        "count": 17000.0,
+        "mean": 6.1065,
+        "std": 13.8454,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 2.0,
+        "max": 109.0
+      },
+      "addon_charge": {
+        "count": 17000.0,
+        "mean": 10.3294,
+        "std": 25.8353,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 100.0
+      },
+      "tax_amount": {
+        "count": 17000.0,
+        "mean": 78.9484,
+        "std": 30.1983,
+        "min": 22.32,
+        "25%": 62.03,
+        "50%": 71.82,
+        "75%": 95.2725,
+        "max": 222.71
+      },
+      "bill_amount": {
+        "count": 17000.0,
+        "mean": 517.5504,
+        "std": 197.9666,
+        "min": 146.32,
+        "25%": 406.65,
+        "50%": 470.82,
+        "75%": 624.5525,
+        "max": 1459.97
+      },
+      "next_bill_amount": {
+        "count": 17000.0,
+        "mean": 518.5827,
+        "std": 198.8361,
+        "min": 146.32,
+        "25%": 407.595,
+        "50%": 470.82,
+        "75%": 629.5225,
+        "max": 1459.97
+      }
+    },
+    "zero_counts": {
+      "data_usage_gb": 0,
+      "voice_calls": 11,
+      "sms_count": 219,
+      "addon_data_gb": 14364,
+      "plan_fee": 0,
+      "discount_amount": 11092,
+      "data_charge": 10223,
+      "voice_charge": 12447,
+      "addon_charge": 14364,
+      "tax_amount": 0,
+      "bill_amount": 0,
+      "next_bill_amount": 0
+    },
+    "negative_counts": {
+      "data_usage_gb": 0,
+      "voice_calls": 0,
+      "sms_count": 0,
+      "addon_data_gb": 0,
+      "plan_fee": 0,
+      "discount_amount": 0,
+      "data_charge": 0,
+      "voice_charge": 0,
+      "addon_charge": 0,
+      "tax_amount": 0,
+      "bill_amount": 0,
+      "next_bill_amount": 0
+    },
+    "nonfinite_counts": {
+      "data_usage_gb": 0,
+      "voice_calls": 0,
+      "sms_count": 0,
+      "addon_data_gb": 0,
+      "plan_fee": 0,
+      "discount_amount": 0,
+      "data_charge": 0,
+      "voice_charge": 0,
+      "addon_charge": 0,
+      "tax_amount": 0,
+      "bill_amount": 0,
+      "next_bill_amount": 0
+    }
+  },
+  "plan_analysis": {
+    "plan_value_counts": {
+      "Standard": 7038,
+      "Basic": 6987,
+      "Premium": 2975
+    },
+    "total_plan_changes": 0,
+    "customers_with_changes": 0
+  },
+  "extreme_values": {
+    "data_usage_gb": {
+      "p01": 1.86,
+      "p99": 45.92,
+      "iqr": 10.45,
+      "lower_3iqr": -22.31,
+      "upper_3iqr": 50.84,
+      "n_below_lower": 0,
+      "n_above_upper": 80,
+      "min": 1.0,
+      "max": 73.65
+    },
+    "voice_calls": {
+      "p01": 64.99,
+      "p99": 426.0,
+      "iqr": 103.0,
+      "lower_3iqr": -108.0,
+      "upper_3iqr": 613.0,
+      "n_below_lower": 0,
+      "n_above_upper": 0,
+      "min": 0.0,
+      "max": 518.0
+    },
+    "sms_count": {
+      "p01": 0.0,
+      "p99": 187.0,
+      "iqr": 56.0,
+      "lower_3iqr": -106.0,
+      "upper_3iqr": 286.0,
+      "n_below_lower": 0,
+      "n_above_upper": 0,
+      "min": 0.0,
+      "max": 269.0
+    },
+    "addon_data_gb": {
+      "p01": 0.0,
+      "p99": 10.0,
+      "iqr": 0.0,
+      "lower_3iqr": 0.0,
+      "upper_3iqr": 0.0,
+      "n_below_lower": 0,
+      "n_above_upper": 2636,
+      "min": 0.0,
+      "max": 10.0
+    },
+    "plan_fee": {
+      "p01": 199.0,
+      "p99": 699.0,
+      "iqr": 200.0,
+      "lower_3iqr": -401.0,
+      "upper_3iqr": 999.0,
+      "n_below_lower": 0,
+      "n_above_upper": 0,
+      "min": 199.0,
+      "max": 699.0
+    },
+    "discount_amount": {
+      "p01": 0.0,
+      "p99": 75.0,
+      "iqr": 25.0,
+      "lower_3iqr": -75.0,
+      "upper_3iqr": 100.0,
+      "n_below_lower": 0,
+      "n_above_upper": 0,
+      "min": 0.0,
+      "max": 75.0
+    },
+    "data_charge": {
+      "p01": 0.0,
+      "p99": 549.7305,
+      "iqr": 95.29,
+      "lower_3iqr": -285.87,
+      "upper_3iqr": 381.16,
+      "n_below_lower": 0,
+      "n_above_upper": 562,
+      "min": 0.0,
+      "max": 1013.26
+    },
+    "voice_charge": {
+      "p01": 0.0,
+      "p99": 63.0,
+      "iqr": 2.0,
+      "lower_3iqr": -6.0,
+      "upper_3iqr": 8.0,
+      "n_below_lower": 0,
+      "n_above_upper": 3420,
+      "min": 0.0,
+      "max": 109.0
+    },
+    "addon_charge": {
+      "p01": 0.0,
+      "p99": 100.0,
+      "iqr": 0.0,
+      "lower_3iqr": 0.0,
+      "upper_3iqr": 0.0,
+      "n_below_lower": 0,
+      "n_above_upper": 2636,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "tax_amount": {
+      "p01": 26.82,
+      "p99": 145.9803,
+      "iqr": 33.2425,
+      "lower_3iqr": -37.6975,
+      "upper_3iqr": 195.0,
+      "n_below_lower": 0,
+      "n_above_upper": 16,
+      "min": 22.32,
+      "max": 222.71
+    },
+    "bill_amount": {
+      "p01": 175.82,
+      "p99": 956.9821,
+      "iqr": 217.9025,
+      "lower_3iqr": -247.0575,
+      "upper_3iqr": 1278.26,
+      "n_below_lower": 0,
+      "n_above_upper": 16,
+      "min": 146.32,
+      "max": 1459.97
+    },
+    "next_bill_amount": {
+      "p01": 175.82,
+      "p99": 965.2436,
+      "iqr": 221.9275,
+      "lower_3iqr": -258.1875,
+      "upper_3iqr": 1295.305,
+      "n_below_lower": 0,
+      "n_above_upper": 15,
+      "min": 146.32,
+      "max": 1459.97
+    }
+  },
+  "target_alignment": {
+    "total_rows": 17000,
+    "rows_with_next_month": 16000,
+    "matched": 16000,
+    "mismatched": 0,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "rows_without_next_month": 1000,
+    "terminal_rows": 1000,
+    "gap_rows": 0,
+    "mismatch_examples": [],
+    "no_next_month_examples": [
+      {
+        "customer_id": "C00001",
+        "billing_month": "2025-05-01",
+        "next_bill_amount": 478.49,
+        "expected_next_month": "2025-06-01"
+      },
+      {
+        "customer_id": "C00002",
+        "billing_month": "2025-05-01",
+        "next_bill_amount": 363.46,
+        "expected_next_month": "2025-06-01"
+      },
+      {
+        "customer_id": "C00003",
+        "billing_month": "2025-05-01",
+        "next_bill_amount": 570.17,
+        "expected_next_month": "2025-06-01"
+      },
+      {
+        "customer_id": "C00004",
+        "billing_month": "2025-05-01",
+        "next_bill_amount": 600.99,
+        "expected_next_month": "2025-06-01"
+      },
+      {
+        "customer_id": "C00005",
+        "billing_month": "2025-05-01",
+        "next_bill_amount": 470.82,
+        "expected_next_month": "2025-06-01"
+      }
+    ],
+    "tolerance_used": 0.01
+  },
+  "bill_reconciliation": {
+    "candidate_equation": "bill_amount = plan_fee - discount_amount + data_charge + voice_charge + addon_charge + tax_amount",
+    "residual_mean": 1.5e-05,
+    "residual_std": 0.003134,
+    "residual_min": -0.01,
+    "residual_max": 0.01,
+    "residual_median": 0.0,
+    "residual_abs_mean": 0.000982,
+    "exact_match_count": 16648,
+    "total_rows": 17000
+  },
+  "chronological_split": {
+    "train": {
+      "origin_months": [
+        "2024-01-01",
+        "2024-02-01",
+        "2024-03-01",
+        "2024-04-01",
+        "2024-05-01",
+        "2024-06-01",
+        "2024-07-01",
+        "2024-08-01",
+        "2024-09-01",
+        "2024-10-01",
+        "2024-11-01",
+        "2024-12-01",
+        "2025-01-01",
+        "2025-02-01"
+      ],
+      "target_months": [
+        "2024-02-01",
+        "2024-03-01",
+        "2024-04-01",
+        "2024-05-01",
+        "2024-06-01",
+        "2024-07-01",
+        "2024-08-01",
+        "2024-09-01",
+        "2024-10-01",
+        "2024-11-01",
+        "2024-12-01",
+        "2025-01-01",
+        "2025-02-01",
+        "2025-03-01"
+      ],
+      "rows": 14000,
+      "customers": 1000
+    },
+    "validation": {
+      "origin_month": "2025-03-01",
+      "target_month": "2025-04-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    "test": {
+      "origin_month": "2025-04-01",
+      "target_month": "2025-05-01",
+      "rows": 1000,
+      "customers": 1000
+    }
+  },
+  "month_detail": [
+    {
+      "month": "2024-01-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-02-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-03-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-04-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-05-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-06-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-07-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-08-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-09-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-10-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-11-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2024-12-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2025-01-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2025-02-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2025-03-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2025-04-01",
+      "rows": 1000,
+      "customers": 1000
+    },
+    {
+      "month": "2025-05-01",
+      "rows": 1000,
+      "customers": 1000
+    }
+  ],
+  "baselines": {
+    "verified_rows": 16000,
+    "previous_bill": {
+      "MAE": 66.6935,
+      "RMSE": 101.3642,
+      "WAPE": 0.1287
+    },
+    "trailing_3month_mean": {
+      "MAE": 57.6655,
+      "RMSE": 85.8695,
+      "WAPE": 0.1113,
+      "valid_rows": 16000
+    }
+  },
+  "final_integrity": {
+    "hash_unchanged": true,
+    "original_hash": "1591046b1a25f22bb6da7f5ff18f84281afcfd62bbf3e7afd582607b15c8859f",
+    "final_hash": "1591046b1a25f22bb6da7f5ff18f84281afcfd62bbf3e7afd582607b15c8859f"
+  },
+  "audit_timestamp": "2026-10-31T12:31:21.389130",
+  "script": "scripts/audit_data.py"
+}
